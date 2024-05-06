@@ -1,0 +1,32 @@
+.Header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/ford-ranger_rd5m4t.jpg");
+  background-position-x: center;
+  background-position-y: top;
+  background-origin: border-box;
+  background-size: cover;
+  position: relative;
+
+  color: white;
+  text-align: center;
+  width: 100vw;
+
+  img {
+    width: 100%;
+  }
+  .content-wrapper {
+    padding: 114px 16px;
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      margin: 16px 0;
+    }
+
+    max-width: 720px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+}
