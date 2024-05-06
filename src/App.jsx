@@ -37,7 +37,12 @@ const App = () => {
       <Header />
       <main>
         {cardData.map((card) => (
-          <Card {...card} active={activeCardId} onClick={handleClick} />
+          <Card
+            key={card.id}
+            {...card}
+            active={activeCardId}
+            onClick={handleClick}
+          />
         ))}
       </main>
     </>
