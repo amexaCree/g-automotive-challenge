@@ -7,10 +7,10 @@ import styles from "./Card.module.scss";
 const cx = classNames.bind(styles);
 
 const Card = (props) => {
-  const { imageSrc, heading, body, buttonLabel } = props;
-  const rootClasses = cx("Card");
+  const { imageSrc, heading, body, buttonLabel, id, active, onClick } = props;
+  const rootClasses = cx({ active: active == id }, "Card");
   return (
-    <div className={rootClasses}>
+    <div className={rootClasses} onClick={() => onClick(id)}>
       <CardImage imageSrc={imageSrc} />
       <div className={cx("content-box")}>
         <div className={cx("content-wrapper")}>
