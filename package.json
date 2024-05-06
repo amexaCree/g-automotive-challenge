@@ -4,7 +4,6 @@
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
-  "homepage": "https://amexacree.github.io/g-automotive-challenge",
   "dependencies": {
     "@babel/plugin-syntax-class-properties": "7.12.13",
     "classnames": "2.5.1",
@@ -23,9 +22,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "browserslist": [
     ">0.2%",
