@@ -14,8 +14,10 @@ const Card = (props) => {
       <CardImage imageSrc={imageSrc} />
       <div className={cx("content-box")}>
         <div className={cx("content-wrapper")}>
-          <CardHeader heading={heading} />
-          <CardBody body={body} />
+          <div>
+            <CardHeader heading={heading} />
+            <CardBody body={body} />
+          </div>
           <Button buttonLabel={buttonLabel} />
         </div>
       </div>

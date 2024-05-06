@@ -22,7 +22,18 @@ const cardData = [
     id: 2,
     imageSrc: brisbaneImage,
     heading: "Heading 3",
-    body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris`,
+    body: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna
+        </p>
+        <p>
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris
+        </p>
+      </>
+    ),
     buttonLabel: "Button 3",
   },
 ];
