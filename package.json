@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
+  "homepage": "https://amexacree.github.io/g-automotive-challenge",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -16,12 +17,15 @@
     "@types/react-dom": "18.2.15",
     "typescript": "4.4.4",
     "vite": "^5.0.11",
-    "@vitejs/plugin-react": "^4.2.1"
+    "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "latest"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
